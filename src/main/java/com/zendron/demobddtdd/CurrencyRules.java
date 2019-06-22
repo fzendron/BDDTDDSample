@@ -2,12 +2,14 @@ package com.zendron.demobddtdd;
 
 public class CurrencyRules {
 
-    private final double DISCOUNT = 0.21;
+    private double discount = 0.21;
 
     public double applyDiscount(final double price) {
 
-        return price - (price * DISCOUNT);
+        return price - (price * this.discount);
     }
 
-
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
 }

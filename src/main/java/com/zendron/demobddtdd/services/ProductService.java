@@ -30,7 +30,7 @@ public class ProductService {
     }
 
     @RequestMapping("/ping")
-    public String hello() {
+    public String ping() {
         return "pong";
     }
 
